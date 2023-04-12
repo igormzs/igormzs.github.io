@@ -1,19 +1,4 @@
-/*
-body{
-    display: flex;
-    height: 100svh;
-    flex-direction: column;
-    margin: 0;
-}
-main{
-    background-color: #add8e6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    font-family: Arial, Helvetica, sans-serif;
-} 
-*/
+
 
 body{
     margin: 0;
@@ -25,7 +10,7 @@ body{
     width: 100%;
 }
 .column{
-    background: #90ee90;
+    background: $primary-color;
 }
 .column:not(:last-child){
     margin-bottom: 30px;
@@ -34,7 +19,7 @@ figure{
     margin: 0;
     height: 0;
     position: relative;
-    background: #ccc;
+    background: $background-color;
     overflow: hidden;
     padding-bottom: 100%;
 }

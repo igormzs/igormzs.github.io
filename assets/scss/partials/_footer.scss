@@ -1,8 +1,9 @@
-header{
-    background-color: #ffc0cb;
+footer{
+    background-color: $primary-color;
+    color: $text-color;
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     font-family: Arial, Helvetica, sans-serif;
 }

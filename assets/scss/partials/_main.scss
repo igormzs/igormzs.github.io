@@ -1,5 +1,5 @@
 main{
-    background: #fff;
+    background: $background-color;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -9,15 +9,18 @@ main{
     max-width: 540px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-}
-@media(min-width: 850px) {
-    main {
+    @media(min-width: $small) {
         max-width: 100%;
         padding: 30px;
-    }
 }
-@media(min-width: 1180px) {
-    main{
-        max-width: 1130px;
-    }
+@media(min-width: $large) {
+    max-width: 1130px;
 }
+}
+.title{
+    color: $primary-color;
+}
+.subtitle{
+    color: $primary-color;
+}
+
