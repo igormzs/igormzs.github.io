@@ -1,7 +1,7 @@
 header{
     background-color: $primary-color;
     color: $text-color;
-    height: 50px;
+    height: rem(50);
     display: flex;
     justify-content: center;
     align-items: flex-start;
