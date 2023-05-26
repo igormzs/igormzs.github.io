@@ -1,34 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!-- @import partials/head-->
+<!-- @import partials/head-->
   <body>
-    <!-- @import partials/header-->
-    <main>
-    <h1 class="title">Igor Menezes - Portfolio</h1>
-    <h2 class="subtitle">Proporção de imagens e object-fit</h2>
-    <p class="paragraph">Proporção da imagem é a relação proporcional entre a largura e a altura de uma imagem. Essencialmente, ela descreve a forma da imagem. A proporção da imagem é escrita como uma fórmula de largura e altura, tal como 3:2. Uma imagem quadrada, por exemplo, tem a proporção de 1:1, pois a altura e a largura são as mesmas.</p>
-    <button class="primary">Botão</button>
-    <br></br>
-    <button class="secondary">Botão</button>
-    <br></br>
-    <div class="flex-grid">
-      <div class="column">
-        <figure>
-          <img src="https://source.unsplash.com/random/?street-photography">
-        </figure>
-      </div>
-      <div class="column">
-        <figure>
-          <img src="https://source.unsplash.com/random/?animals">
-        </figure>
-      </div>
-      <div class="column">
-        <figure>
-          <img src="https://source.unsplash.com/random/?fruit">
-        </figure>
-      </div>
+    <div class="nav-container">
+      <!-- @import partials/header-->
     </div>
-    </main>
+    
+      <main>
+        <div class="hero">
+          <div class="content">
+            <h1 class="hero-title">Igor Menezes</h1>
+            <h2 class="hero-subtitle">Digital Product Designer</h2>
+            <p class="hero-description">🌎 Based in Lisbon - Open for remote work
+            <br>💬 Portuguese (Native) / English (Fluent) / Spanish (Advanced)</br>
+            </p>
+              <div class="hero-ctas">
+              <button class="primary">Download my CV</button>
+              <button class="secondary">Check my work</button>
+              </div>
+          </div>
+        </div>
+      <section class="projects">
+        <div class="projects-container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="portfolio-left">
+            <div class="inner">
+              <p class="subtitle">UX/UI Desigin</p>
+              <p class="featured-title">Google Maps</p>
+              <p class="featured-desc">Improving accessibility visualization</p>
+            </div>
+          </div>
+          <a href="#"><img src="assets/images/google-maps-cover.png" alt="Google Maps Cover"></a>
+        </div>
+        <div class="projects-container">
+          <div class="portfolio-left">
+            <div class="inner">
+              <p class="subtitle">UX/UI Design</p>
+              <p class="featured-title">FBAUL redesign</p>
+              <p class="featured-desc">Website redesign proposal</p>
+            </div>
+          </div>
+          <a href="#"><img src="assets/images/fbaul-cover.png" alt="FBAUL cover"></a>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="work-left">
+            <div class="inner">
+              <p class="subtitle">OLX Group</p>
+              <p class="featured-title">Product Designer Trainee</p>
+              <p class="featured-desc">I was part of the Product Design & Research team in the Motors vertical, responsible for brands such as Otomoto (Poland), Standvirtual (Portugal) & Autovit (Romania).</p>
+            </div>
+        </div>
+      </section>
+      </main>
     <!-- @import partials/footer-->
   </body>
 </html>
