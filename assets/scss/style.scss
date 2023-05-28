@@ -13,7 +13,7 @@ url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&disp
 body {
   height: 100;
   margin: 0;
-  font-family: 'Lato', 'arial'
+  font-family: 'Lato', 'arial';
 }
 ul {
   list-style-type: none;
@@ -31,10 +31,10 @@ img {
 }
 
 .nav-container{
-  background: #232323;
+  background: $background-color;
 
   a{
-    color: white;
+    color: $text-color;
   }
 }
 .hero-cta{
@@ -54,12 +54,12 @@ img {
 .subtitle{
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: $text-color;
   letter-spacing: .2em;
   font-size: .85em;
 }
 .featured-title{
-  color: #3A93B2;
+  color: $primary-color;
   font-weight: bold;
   font-size: 1.3em;
   margin-top: 0.5em;
@@ -82,17 +82,17 @@ img {
 
 button.primary {
     border-radius: 8px;
-    border: #3A93B2;
+    border: $primary-color;
     color: #fff;
     padding: 8px 10px;
     font-size: 18px;
-    background: #3A93B2;
+    background: $primary-color;
   }
   
 button.secondary {
     @extend .primary;
-    color: #3A93B2;
+    color: $primary-color;
     background: none;
-    border: 1px solid #3A93B2;
+    border: 1px solid $primary-color;
     border-radius: 8px;
   }

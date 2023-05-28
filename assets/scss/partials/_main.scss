@@ -2,10 +2,18 @@ main{
     background: $background-color;
     color: white;
     display: grid;
-    text-align: center;
-    padding: 4em;
-
-
+    text-align: left;
+    padding: 2em;
+a {
+    text-decoration: underline;
+    color: white;
+}
+img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    border-radius: .5em;
+}
     @media(min-width: $medium) {
         max-width: 100%;
         padding: 30px;
