@@ -1,25 +1,53 @@
 footer{
-    background-color: $primary-color;
+    background-color: $background-color;
     color: $text-color;
-    height: 6em;
+    width: 100vw;
     display: grid;
     justify-content: center;
     align-items: flex-end;
     font-family: 'Lato', 'arial';
     img{
-        width: 50%;
-        height: 50%;
+        width: 24px;
+        height: auto;
         position: relative;
-        margin: .15em;
     }
     ul{
         display: flex;
-
+        margin: 0;
+        margin-top: 1em;
+        list-style: none;
         a{
             display: block;
             padding: 0 .25em;
             color: $text-color;
             text-decoration: none;
         }
+    }
+    p{
+        @include main-font;
+        font-size: rem(16px);
+        text-align: center;
+        font-weight: 400;
+       }
+    .contact-links{
+        padding: 0;
+        justify-content: center;
+    }
+    hr{
+        border: 1.6px solid $text-color;
+        width: 94vw;
+        margin: 0 auto 0 auto;
+        display: block;
+        @media (min-width: $large){
+            border: 1.6px solid $text-color;
+        }
+     }
+
+    @media(min-width: $large){
+        img{
+            width: 50%;
+            height: 50%;
+        }
+       
     }
 }

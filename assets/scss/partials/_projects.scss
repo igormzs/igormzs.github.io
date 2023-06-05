@@ -1,0 +1,17 @@
+.grid-container-projects{
+    width: 94%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+    margin: 16px;
+    @media (min-width: $medium) {
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 24px;
+        margin-top: 12vw;
+        row-gap: 80px;
+    }
+    @media (min-width: $large) {
+        margin-top: 8vw;
+    }
+}

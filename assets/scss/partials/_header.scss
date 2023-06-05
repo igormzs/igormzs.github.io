@@ -1,23 +1,86 @@
 header {
+    margin: 0 4% 0 4%;
+    .header-container{
+    background-color: $background-color;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1em;
+    @media (min-width: $medium){
+        height: rem(90px);
+        align-items: center;
+    }
+}
+}
 
-    .logo{
-        color: aquamarine;
-        font-weight: bold;
+
+.btn--toggle-menu{
+    background: transparent;
+    border: none;
+    svg{
+        stroke: white;
+        background: transparent;
+        display: flex;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    @media (min-width: $medium){
+        display: none;
+    }
+}
+#menu{
+    display: none;
+    @media (min-width: $medium) {
+        display: block;
+        a{
+            font-size: rem(24px)
+        }
+    }
+    &.menu-is-open{
+        display: block;
+        position: absolute;
+        background: $background-color;
+        top: 95px;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        ul{
+            flex-direction: column;
+            padding: 0;
+        }
+        li{
+            text-align: center;
+        }
+    @media (min-width:$medium) {
+            display: block;
+            position: static;
+            background: transparent;
+            width: auto;
+            height: auto;
+            ul{
+                flex-direction: row;
+            }
+            ;
+        }
     }
 }
     ul{
         display: flex;
-
-        a{
-            display: block;
-            padding: 0 1em;
-            color: #fff;
-            text-decoration: none;
-            &.active{
-                text-decoration: underline;
-             }
+        margin: 0;
+        li{
+            list-style: none;
+            margin: 24px;
+            a{
+                @include main-font;
+                font-size: rem(40px);
+                color: $text-color;
+                text-decoration: none;
+                &active{
+                    font-weight: bolder;
+                    //text-decoration: underline;
+                }
+            }
         }
     }
