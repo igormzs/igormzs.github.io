@@ -15,3 +15,27 @@
         margin-top: 8vw;
     }
 }
+.section-title{
+    grid-column: 1 / span 4;
+}
+.projects-card{
+    grid-column: 1 / span 4;
+}
+.cards{
+    background-color: $background-color;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #4d4d4d;
+    margin: rem(16px);
+    width: fit;
+}
+figure{
+    margin: 0;
+    width: 100%;
+.projects-cover{
+    width: 100%;
+    img{
+    width: 100%;
+}
+}
+}

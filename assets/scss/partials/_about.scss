@@ -1,116 +1,133 @@
-.grid-container-about{
-    width: 94%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    row-gap: 24px;
-    margin: 16px;
-    @media (min-width: $medium) {
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 24px;
-        margin-top: 12vw;
-        row-gap: 80px;
-    }
-    @media (min-width: $large) {
-        margin-top: 8vw;
-    }
+.grid-container-about {
+  width: 94%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 24px;
+  margin: 16px;
+
+  @media (min-width: $medium) {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    margin-top: 12vw;
+    row-gap: 80px;
   }
-  .hero-about{
-    grid-area: 1 / span 4;
-    margin-bottom: 4em;
-    .hero-about-title{
-        font-size: rem(32px);
-    }
-    figure{
-    width: 94vw;
+
+  @media (min-width: $large) {
+    margin-top: 8vw;
+  }
+}
+
+.hero-about {
+  grid-area: 1 / span 4;
+  margin-bottom: 4em;
+
+  .hero-about-title {
+    font-size: rem(32px);
+  }
+
+  .hero-content {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    img{
-        width: 40%;
+
+    figure {
+      width: 40%;
+      flex: 0 0 40%;
+
+      img {
+        width: 100%;
         border-radius: 240px;
         border-style: solid;
         border-color: rgb(39, 39, 39);
       }
     }
-    .hero-description{
-        font-size: rem(16px);
-        line-height: rem(24px);
-    }
-    .hero-cta{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 4em;
-        margin-bottom: 2em;
-      }
-      a{
-        width: 80%;
-      }
-      .button-primary{
-        background-color: $primary-color;
-        border-radius: 16px;
-        padding: 12px 16px;
-        color: $text-color;
-        border: none;
-        width: 100%;
-        margin: 1em;
-        font-size: rem(20px);
-      }
-  }
-  .work{
-    grid-area: 2 / span 4;
-    .section-title{
-    font-size: rem(32px);
-    }
-    .work-container{
-        justify-content: center;
-        margin: 3em 0 3em 0;
-    }
-    figure{
-        align-items: center;
-    }
-    .subtitle{
-        font-size: rem(24px);
-    }
-    .featured-title{
-        font-size: rem(24px);
-        color: $primary-color;
-    }
-    .featured-desc{
-        font-size: rem(16px);
-        line-height: rem(24px);
-    }
-    a{
-        text-decoration: underline;
-        color: $white;
+
+    .hero-about-description {
+      width: 60%;
+      flex: 0 0 60%;
+      font-size: rem(16px);
+      line-height: rem(24px);
     }
   }
-  @media(min-width: $medium){
-    .hero-about{
-      grid-area: 1 / span 12;
-      figure{
-        width: 94vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        img{
-            width: 40%;
-            border-radius: 240px;
-            border-style: solid;
-            border-color: rgb(39, 39, 39);
-          }
-        }   
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
   }
-  .work{
-    grid-area: 2 / span 12;
+
+  a {
+    width: 80%;
   }
-}
-@media(min-width: $large){
-  .hero-about-description{
-    grid-area: 1 / span 12;  
+
+  .button-primary {
+    background-color: $primary-color;
+    border-radius: 16px;
+    padding: 12px 16px;
+    color: $text-color;
+    border: none;
+    width: 100%;
+    margin: 1em;
+    font-size: rem(20px);
+  }
+
+  @media (min-width: $medium) {
+    grid-area: 1 / span 12;
+
+    .hero-content {
+      justify-content: space-between;
+    }
+
+    figure {
+      flex: 0 0 50%;
+    }
+
+    .hero-about-description {
+      flex: 0 0 45%;
+    }
   }
 }
 
+.work {
+  grid-area: 2 / span 4;
+
+  .section-title {
+    font-size: rem(32px);
+  }
+
+  .work-container {
+    justify-content: center;
+    margin: 3em 0 3em 0;
+  }
+
+  figure {
+    align-items: center;
+  }
+
+  .subtitle {
+    font-size: rem(24px);
+  }
+
+  .featured-title {
+    font-size: rem(24px);
+    color: $primary-color;
+  }
+
+  .featured-desc {
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
+
+  a {
+    text-decoration: underline;
+    color: $white;
+  }
+
+  @media (min-width: $medium) {
+    grid-area: 2 / span 12;
+  }
+}

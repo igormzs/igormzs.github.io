@@ -1,17 +1,17 @@
 header {
     margin: 0 4% 0 4%;
     .header-container{
-    background-color: $background-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 1em;
-    @media (min-width: $medium){
-        height: rem(90px);
+        background-color: $background-color;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        flex-direction: row;
+        margin-top: 1em;
+        @media (min-width: $medium){
+            height: rem(90px);
+            align-items: center;
+        }
     }
-}
 }
 
 
@@ -32,6 +32,7 @@ header {
 }
 #menu{
     display: none;
+    transition: height 0.5s ease-in-out;
     @media (min-width: $medium) {
         display: block;
         a{
@@ -39,6 +40,7 @@ header {
         }
     }
     &.menu-is-open{
+        transition: height 0.5s ease-in-out;
         display: block;
         position: absolute;
         background: $background-color;
@@ -46,6 +48,7 @@ header {
         width: 100%;
         left: 0;
         height: 100vh;
+        z-index: 1;
         ul{
             flex-direction: column;
             padding: 0;
