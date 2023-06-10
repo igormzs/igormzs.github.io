@@ -1,4 +1,4 @@
-.grid-container-home{
+.grid-container-project{
     width: 94%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,32 +16,111 @@
         margin-top: 8vw;
     }
   }
-main{
-    margin: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  .section1{
+    grid-column: 1 / span 4;
+  }
+  .section2{
+    grid-column: 1 / span 4;
+  }
+  .section3{
+    grid-column: 1 / span 4;
+  }
+  .section4{
+    grid-column: 1 / span 4;
+  }
+  .section5{
+    grid-column: 1 / span 4;
+  }
+.headline{
+    margin:0 0 1em 0;
+    font-size: rem(32px);
+    font-weight: 600;
 }
-h2{
-    align-items: left;
+.title{
+    font-size: rem(28px);
+    margin:1em 0 1em 0;
+    font-weight: 600;
 }
-h3{
-    align-items: left;
+.subtitle{
     color: $text-color;
+    margin:2em 0 1em 0;
+}
+p{
+    margin-bottom: 2em;
+    line-height: rem(28px);
 }
 .bullet-point{
     display: grid;
+    grid-column: 1 / span 2;
     li{
-        text-decoration: none;
         color: $text-color;
+        list-style: circle;
     }
 }
 .case-images{
-    width:100%;
+    grid-column: 1 / span 4;
+    width: 80vw;
+    max-width: 1000px;
+    justify-content: center;
     figcaption{
         color: $text-color;
     }
     img{
-        width: 80vw;
+        width: 100%;
+        border-radius: 8px;
+        margin: 1em;
+    }
+}
+.quote-container{
+    grid-column: 1 / span 4;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #4d4d4d;
+    margin: 2em;
+.quote{
+    margin: 12px;
+    cite{
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+}
+@media (min-width:$medium) {
+    .section1{
+        grid-column: 1 / span 12;
+        
+      }
+    .section2{
+    grid-column: 1 / span 12;
+    }
+    .section3{
+    grid-column: 1 / span 12;
+    }
+    .section4{
+    grid-column: 1 / span 12;
+    }
+    .section5{
+    grid-column: 1 / span 12;
+    }
+}
+@media (min-width:$large) {
+    .section1{
+        grid-column: 1 / span 12;
+        figure{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .section2{
+    grid-column: 1 / span 12;
+    }
+    .section3{
+    grid-column: 1 / span 12;
+    }
+    .section4{
+    grid-column: 1 / span 12;
+    }
+    .section5{
+    grid-column: 1 / span 12;
     }
 }

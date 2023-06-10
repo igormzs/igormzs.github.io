@@ -21,6 +21,9 @@
 .projects-card{
     grid-column: 1 / span 4;
 }
+.projects-card-2{
+    grid-column: 1 / span 4;
+}
 .cards{
     background-color: $background-color;
     border-radius: 8px;
@@ -28,6 +31,24 @@
     border-color: #4d4d4d;
     margin: rem(16px);
     width: fit;
+}
+.card-text{
+    margin: 1em;
+}
+.subtitle{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+.featured-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+.featured-desc{
+    margin-bottom: 1em;
 }
 figure{
     margin: 0;
@@ -38,4 +59,31 @@ figure{
     width: 100%;
 }
 }
+}
+@media (min-width:$medium) {
+    .section-title{
+        grid-column: 1 / span 10;
+        font-size: rem(32px);
+        margin-left: 16px;
+    }
+    .projects-card{
+        &:nth-of-type(1){
+            grid-column: 1 / span 6;
+        }
+        &:nth-of-type(2){
+            grid-column: 7 / span 6;
+        }
+        &:nth-of-type(3){
+            grid-column: 1 / span 6;
+        }
+        &:nth-of-type(4){
+            grid-column: 7 / span 6;
+        }
+    }
+}
+@media (min-width:$large) {
+    .projects-card{
+        grid-column: 2 / span 6;
+        
+    }
 }

@@ -2,26 +2,21 @@ body{
     background-color: $background-color;
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
+    justify-content: center;
     margin: 0 auto;
     @include main-font;
     &.no-scroll{
         overflow-y: hidden;
     }
-    /*&.work{
-        background-color: red;
-    }
-    &.contacts{
-        background-color: yellow;
-    }*/
 }
 main{
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+    max-width: 1280px;
 }
 hr{
     width: 100%;
