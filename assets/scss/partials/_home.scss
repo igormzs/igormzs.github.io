@@ -13,7 +13,7 @@
       row-gap: 80px;
   }
   @media (min-width: $large) {
-      margin-top: 8vw;
+      margin-top: 4vw;
   }
 }
 .hero{
@@ -46,6 +46,11 @@
     font-size: rem(20px);
     cursor: pointer;
   }
+  .button-primary:hover{
+    background-color: $text-color;
+    color: $primary-color;
+    border-style: solid;
+  }
   #illustration{
     display: none;
   }
@@ -53,7 +58,7 @@
 .projects{
   grid-area: 2 / 1 / 4 / span 4;
   .section-title{
-    font-size: rem(32px);
+    @include titleName-mobile;
   }
   .projects-container{
     justify-content: left;
@@ -72,15 +77,24 @@
     color: $primary-color;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: rem(20px);
+    @include subtitle-mobile;
   }
   .featured-title{
-    font-size: rem(24px);
+    @include title-mobile;
   }
+}
+a{
+   text-decoration: none;
 }
 @media(min-width: $medium){
   .hero{
     grid-area: 1 / span 12;
+    .content{
+      display: grid;
+    }
+    .button-primary{
+        grid-column: 1 / -1;
+    }
 }
  .projects{
   grid-area: 2 / span 12;
@@ -148,13 +162,13 @@
     width: 100%;
     justify-content: space-between;
     .subtitle{
-      font-size: rem(24px);
+      @include subtitle-desktop;
     }
     .featured-title{
-      font-size: 28px;
+      @include title-desktop;
     }
     .featured-desc{
-      font-size: 20px;
+      @include subtitle-mobile;
     }
     figure{
       max-width: 600px;
@@ -177,7 +191,7 @@
   .menu-link {
     text-decoration: none;
     color: $text-color;
-    font-size: rem(18px);
+    @include subtitle-mobile;
   }
   
   .menu-link:hover {

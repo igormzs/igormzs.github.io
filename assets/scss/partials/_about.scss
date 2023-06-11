@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $large) {
-    margin-top: 8vw;
+    margin-top: 4vw;
   }
 }
 
@@ -23,7 +23,7 @@
   margin-bottom: 4em;
 
   .hero-about-title {
-    font-size: rem(32px);
+    @include titleName-mobile;
     margin-bottom: 1em;
   }
 
@@ -36,7 +36,7 @@
     .hero-about-description {
       width: 60%;
       flex: 0 0 60%;
-      font-size: rem(16px);
+      @include subtitle-mobile;
       line-height: rem(24px);
     }
   }
@@ -64,11 +64,9 @@
     margin-top: 2em;
     margin-bottom: 2em;
   }
-
   a {
     width: 90%;
   }
-
   .button-primary {
     background-color: $primary-color;
     border-radius: 16px;
@@ -79,22 +77,28 @@
     margin: 1em;
     font-size: rem(20px);
   }
-  
-.subtitle{
-    font-size: 1.25rem;
+  .button-primary:hover{
+    background-color: $text-color;
+    color: $primary-color;
+    border-style: solid;
+  }
+}
+
+.subtitle-projects{
+    @include title-mobile;
     color: $text-color;
     letter-spacing: 2px;
-    margin-bottom: 1em;
+    margin: 1em 0 1em 0;
 }
 .featured-title{
-    font-size: 1.5rem;
+    @include title-mobile;
     font-weight: 500;
     margin-bottom: 0.5em;
 }
 .featured-desc{
     margin-bottom: 1em;
 }
-}
+
 #hr-work{
   margin: 1em 0 3em 0;
 }
@@ -123,26 +127,26 @@
   .work {
   grid-area: 2 / span 12;
     .section-title {
-      font-size: rem(32px);
+      @include title-desktop;
     }
     .work-container {
       grid-area: 3 / 10;
       justify-content: center;
-      margin: 3em 0 3em 0;
+      margin: 4em 0 4em 0;
     }
     figure {
       align-items: center;
     }
-    .subtitle {
-      font-size: rem(24px);
+    .subtitle-projects {
+      @include subtitle-desktop;
     }
     .featured-title {
-      font-size: rem(24px);
+      @include subtitle-desktop;
       color: $primary-color;
     }
     .featured-desc {
-      font-size: rem(16px);
-      line-height: rem(24px);
+      @include bodyText-desktop;
+      line-height: rem(28px);
     }
     a {
       text-decoration: underline;

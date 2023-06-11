@@ -26,13 +26,15 @@ footer{
     }
     p{
         @include main-font;
-        font-size: rem(16px);
+        @include title-mobile;
         text-align: center;
         font-weight: 400;
+        margin-top: 1em;
        }
     .contact-links{
         padding: 0;
         justify-content: center;
+        margin-top: 1em;
     }
     hr{
         border: 1.6px solid $text-color;
